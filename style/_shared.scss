@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "IRANSans Light", "Segoe UI Light", sans-serif;
+}
+
+body {
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+    filter: blur(5px);
+  }
+}
+//----------------------------webkit based browsers custom scrollbar--------------------------------
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(86, 86, 86, 0.37);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #35b373;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(53, 179, 115, 0.68);
+}
+//-------------------------------------------method 2-------------------------------------------------
+//@mixin slide_out() {
+//  transition: 1s ease-in-out;
+//}
+
+//@mixin slide_in() {
+//  transition: 1s ease-in-out;
+//}
+//
+//@mixin slide($x-axis,$y-axis,$in) {
+//  transform: translate($x-axis, $y-axis);
+//  @if $in==true {
+//    @include slide_in();
+//  } @else {
+//    @include slide_out();
+//  }
+//}
+//
+//.slide-out-up {
+//  @include slide(0, -100%, false);
+//}
+//
+//.slide-in-up {
+//  @include slide(0, 100%, true);
+//}
+//
+//.slide-out-down {
+//  @include slide(0, 100%, false);
+//}
+//
+//.slide-in-down {
+//  @include slide(0, 0, true);
+//}
+//
+//.slide-out-right {
+//  @include slide(100%, 0, false);
+//}
+//
+//.slide-in-right {
+//  @include slide(-100%, 0, true);
+//}
+//
+//.slide-out-left {
+//  @include slide(-100%, 0, false);
+//}
+//
+//.slide-in-left {
+//  @include slide(100%, 0, true);
+//}
